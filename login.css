@@ -1,0 +1,46 @@
+body{
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.card{
+
+box-shadow: 0px 0px 3px 2px black;
+border-radius: 25px 25px;
+
+
+}
+
+.facebookbtn{
+   
+   display: block;
+   position: relative;
+    
+    border-radius: 10px 10px;
+    
+    box-shadow: 0px 0px 2px 1px rgba(18, 21, 22, 0.526);
+
+    
+    
+
+}
+
+
+.numberTextBox{
+    border-radius: 100px 3000px;
+    color: black;
+}
+
+
+.fa-facebook{
+font-size: xx-large;
+color: blue;
+}
+
+
+@media(max-width: 320px){
+    .facebookbtn{
+        max-width: 250px;
+        margin-right: 10%;
+    }
+}
