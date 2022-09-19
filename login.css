@@ -3,8 +3,14 @@ body{
     box-sizing: border-box;
     margin: auto;
 }
-.card{
 
+.logo2Img{
+display: flex;
+margin-left: 100px;
+}
+
+
+.card{
 box-shadow: 0px 0px 3px 2px black;
 border-radius: 25px 25px;
 
@@ -36,6 +42,8 @@ border-radius: 25px 25px;
 font-size: xx-large;
 color: blue;
 }
+
+
 
 
 @media(max-width: 320px){
