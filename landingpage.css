@@ -1,0 +1,82 @@
+.groseri {
+  width: 55%;
+}
+.food {
+  width: 70%;
+}
+.Shops {
+  width: 60%;
+}
+.banner img {
+  width: 100%;
+}
+.carouselSize {
+  min-height: auto;
+  width: 80%;
+}
+
+.icon {
+  width: 45%;
+}
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+.footerShadow {
+  box-shadow: 0px 0px 3px 2px black;
+}
+h2 {
+  font: 24px/36px "Poppins-SemiBold", sans-serif;
+}
+span {
+  font: "Poppins-SemiBold", sans-serif;
+  color: black;
+}
+.visually-hidden {
+  background-color: aqua;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+.formSearch {
+  width: 450px;
+}
+a {
+  text-decoration: none;
+}
+a span {
+  text-decoration: none;
+}
+.theFooter {
+  height: 50px;
+  margin-top: -50px;
+}
