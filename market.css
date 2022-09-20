@@ -1,0 +1,19 @@
+.marketLogoShadow{
+box-shadow: 0px 0px 2px 1px rgb(85, 85, 85);
+}
+
+
+
+@media  (max-width: 320px){
+    nav{
+       
+       width: 800px;
+      
+    }
+    .shops-container{
+       
+        width: 800px;
+    }
+}
+
+
