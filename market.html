@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css" />
     <!-- CSS only -->
     <link
@@ -20,451 +20,559 @@
     <link rel="stylesheet" href="landingpage.css" />
     <link rel="stylesheet" href="market.css" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-info footerShadow px-5 py-4">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./Images/LOGO3.png"
-            class="img-fluid rounded-circle"
-            style="width: 100px"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="formSearch">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="What do you want?"
-                  aria-label="Search"
-                />
-                <button class="btn btn-light" type="submit">Search</button>
-              </form>
-            </li>
-            <li class="nav-item"></li>
-          </ul>
-
-          <form class="d-flex" role="submit">
-            <button type="button" class="btn btn-light me-2">My Account</button>
-          </form>
-          <a class="position-relative" href="../cart/index.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-
-            <span class="visually-hidden">cart</span>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/LOGO3.png" class="img-fluid rounded-circle" style="width: 100px;">
           </a>
-        </div>
-      </div>
-    </nav>
-    <!-- NAVBAR END -->
-
-    <!-- FOODS -->
-    <div class="container shops-container">
-      <div class="d-flex justify-content-around">
-        <div class="col-4">
-          <h2><strong>Groceries</strong></h2>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-default dropdown-toggle"
-              type="button"
-              id="menu1"
-              data-bs-toggle="dropdown"
-            >
-              <img
-                class="groseri"
-                src="https://cdn-icons-png.flaticon.com/512/1261/1261163.png"
-              />
-              <span class="caret"></span>
-            </button>
-            <ul
-              class="dropdown-menu scrollable-menu"
-              role="menu"
-              aria-labelledby="menu1"
-            >
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYzuJ4bfbO_VEpLJM5U8SGNeNEmR8H62RwA&usqp=CAU"
-                    class="icon"
-                  />
-                  <span>Baked Goods</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://www.iconpacks.net/icons/2/free-medicine-icon-3193-thumb.png"
-                    class="icon"
-                  />
-                  <span>Pharmacy</span>
-                </a>
-              </li>
-
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://thumbs.dreamstime.com/b/print-173512844.jpg"
-                    class="icon"
-                  />
-                  <span>Organic</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://smashicons.com/uploads/media/icon_thumbnail/0006/56/thumb_555848_icon_thumbnail_small.png"
-                    class="icon"
-                  />
-                  <span>Frozen meat</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <h2><strong>Food</strong></h2>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-default dropdown-toggle"
-              type="button"
-              id="menu1"
-              data-bs-toggle="dropdown"
-            >
-              <img class="food"
-              src=https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/orange_travelpictdinner_1484336833.png
-              />
-              <span class="caret"></span>
-            </button>
-            <ul
-              class="dropdown-menu scrollable-menu"
-              role="menu"
-              aria-labelledby="menu1"
-            >
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4856/4856718.png"
-                    class="icon"
-                  />
-                  <span>Coffee</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png"
-                    class="icon"
-                  />
-                  <span>Burgers</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nFo2z85LtjB3X3hLdY5SXnovLtsM3jRdeg&usqp=CAU"
-                    class="icon"
-                  />
-
-                  <span>Pizza</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/2927/2927347.png"
-                    class="icon"
-                  />
-                  <span>Healthy meals</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <h2><strong>Shops</strong></h2>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-default dropdown-toggle"
-              type="button"
-              id="menu1"
-              data-bs-toggle="dropdown"
-            >
-              <img class="Shops"
-              src=https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png
-              />
-              <span class="caret"></span>
-            </button>
-
-            <ul
-              class="dropdown-menu scrollable-menu"
-              role="menu"
-              aria-labelledby="menu1"
-            >
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNPnNtoTPxyxUodaqR_YGAvJSClTBgr5rptbP_AFPCxb5EMAVOZnZKjjXzCZDemI1f0k&usqp=CAU"
-                    class="icon"
-                  />
-                  <span>Hardware</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png"
-                    class="icon"
-                  />
-                  <span>Pet care</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://i.pinimg.com/736x/ae/39/7c/ae397c142ffaf5f72093f7e0c90499e5.jpg"
-                    class="icon"
-                  />
-                  <span>Gadgets and electronics</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">
-                  <img
-                    src="https://img.freepik.com/premium-vector/occupational-health-flat-modern-design-illustration_566886-371.jpg?w=360"
-                    class="icon"
-                  />
-                  <span>Health and safety</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOODS END -->
-
-    <div class="container-fluid px-5 mt-5">
-      <div class="d-flex justify-content-between flex-wrap">
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="col-md-12 mt-5">
-              <img
-                src="./Images/SnR.jpg"
-                class="rounded img-fluid marketLogoShadow"
-                style="width: 300px; height: 300px"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div
-            class="container-fluid bg-primary subNav py-3 sticky-top rounded"
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <div class="d-flex justify-content-around">
-              <div class="col-md-3">
-                <a href="#cont1" class="text-white">Frozen Food</a>
-              </div>
-              <div class="col-md-3">
-                <a href="#cont2" class="text-white">Liquor</a>
-              </div>
-            </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+  
+              <li class="formSearch">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="What do you want?"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-light" type="submit">Search</button>
+                </form>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+  
+            <form class="d-flex" role="submit">
+              <button type="button" class="btn btn-light me-2">My Account</button>
+            </form>
+            <a class="position-relative" href="../cart/index.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+  
+              <span class="visually-hidden">cart</span>
+            </a>
           </div>
-          <!-- S&R food Container-->
-          <div class="container-fluid" id="cont1">
-            <div class="d-flex justify-content-between flex-wrap">
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">
-                    Bambi Cheese Sticks Jalapeno Party Pack 650g
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/cheesesticks.jpg"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Multi-pack (48 sticks)</li>
-                    <li>
-                      Frozen Jalapeno flavored cheese sticks in 1 packaging
-                    </li>
-                    <li>Made with Premium Jalapeno</li>
-                    <li>Creamy and savory cheese inside</li>
-                    <li>Product of the Philippines</li>
-                  </ul>
-
-                  <h5>Actual Weight: 0.64 KGs</h5>
-                </div>
-              </div>
-
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">
-                    Johnsonville Original Smoked Sausage 360g
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/sausage.jpg"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Single Item</li>
-                    <li>Sausage in 1 pack</li>
-                    <li>Made with 100% pork</li>
-                    <li>Original smoked flavor</li>
-                    <li>Product of USA</li>
-                  </ul>
-                  <h5>Actual Weight: 0.38 KGs</h5>
-                </div>
-              </div>
-
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">S&R French Fries Crinkle Cut 2kg</h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/fries.jfif"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Single Item</li>
-                    <li>Crinkle-cut French Fries in 1 plastic packaging</li>
-                    <li>Easy-to-Prepare</li>
-                    <li>Quick to cook</li>
-                    <li>Product of the Netherlands</li>
-                  </ul>
-                  <h5>Actual Weight: 0.84 KGs</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- S&R Foodcontainer Ends -->
-
-          <!-- liquor-->
-          <div class="container-fluid" id="cont2">
-            <div class="d-flex justify-content-between flex-wrap">
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">
-                    Jack Daniel's Old No.7 Tennessee Whiskey 700mL
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/jackdaniels.jpg"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Multi-pack (48 sticks)</li>
-                    <li>Tennessee Whiskey in 1 glass bottle</li>
-                    <li>40% Alcohol Volume</li>
-                    <li>Sugar Maple Charcoal</li>
-                    <li>Product of the USA</li>
-                  </ul>
-
-                  <h5>Actual Weight: 1.14 KGs</h5>
-                </div>
-              </div>
-
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">
-                    Johnnie Walker Blue Label Blended Scotch Whisky 750 mL
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/bluelabel.jpg"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Single Item</li>
-                    <li>Blended Scotch Whisky in 1 bottle</li>
-                    <li>40% alc. / vol.k</li>
-                    <li>Rich and smoky</li>
-                    <li>Product of Scotland</li>
-                  </ul>
-                  <h5>Actual Weight: 2.02 KGs</h5>
-                </div>
-              </div>
-
-              <div class="card rounded mt-5" style="width: 500px">
-                <div class="card-header">
-                  <h5 class="text-center">Jagermeister Herb Liqueur 700mL</h5>
-                </div>
-                <div class="card-body">
-                  <img
-                    src="./Images/itemsImage/Jagermeister.jpg"
-                    class="img-fluid rounded"
-                    style="width: 500px; height: 400px"
-                  />
-                </div>
-                <div class="card-footer">
-                  <ul>
-                    Features:
-                    <li>Single Item</li>
-                    <li>Herbal Liqueur in 1 glass bottle</li>
-                    <li>35% alc. / vol.</li>
-                    <li>
-                      Selected 56 botanicals, cold macerated elixir, matured in
-                      oak
-                    </li>
-                    <li>Product of Germany</li>
-                  </ul>
-                  <h5>Actual Weight: 2.02 KGs</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- #end of liquor container -->
         </div>
-      </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+         <!-- FOODS -->
+        <div class="container shops-container">
+            <div class="d-flex justify-content-around">
+              <div class="col-4">
+                <h2><strong>Groceries</strong></h2>
+      
+                <div class="dropdown">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    id="menu1"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img
+                      class="groseri"
+                      src="https://cdn-icons-png.flaticon.com/512/1261/1261163.png"
+                    />
+                    <span class="caret"></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu scrollable-menu"
+                    role="menu"
+                    aria-labelledby="menu1"
+                  >
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYzuJ4bfbO_VEpLJM5U8SGNeNEmR8H62RwA&usqp=CAU"
+                          class="icon"
+                        />
+                        <span>Baked Goods</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://www.iconpacks.net/icons/2/free-medicine-icon-3193-thumb.png"
+                          class="icon"
+                        />
+                        <span>Pharmacy</span>
+                      </a>
+                    </li>
+      
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://thumbs.dreamstime.com/b/print-173512844.jpg"
+                          class="icon"
+                        />
+                        <span>Organic</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://smashicons.com/uploads/media/icon_thumbnail/0006/56/thumb_555848_icon_thumbnail_small.png"
+                          class="icon"
+                        />
+                        <span>Frozen meat</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <h2><strong>Food</strong></h2>
+      
+                <div class="dropdown">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    id="menu1"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img class="food"
+                    src=https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/orange_travelpictdinner_1484336833.png
+                    />
+                    <span class="caret"></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu scrollable-menu"
+                    role="menu"
+                    aria-labelledby="menu1"
+                  >
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/4856/4856718.png"
+                          class="icon"
+                        />
+                        <span>Coffee</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png"
+                          class="icon"
+                        />
+                        <span>Burgers</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nFo2z85LtjB3X3hLdY5SXnovLtsM3jRdeg&usqp=CAU"
+                          class="icon"
+                        />
+      
+                        <span>Pizza</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/2927/2927347.png"
+                          class="icon"
+                        />
+                        <span>Healthy meals</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <h2><strong>Shops</strong></h2>
+      
+                <div class="dropdown">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    id="menu1"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img class="Shops"
+                    src=https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png
+                    />
+                    <span class="caret"></span>
+                  </button>
+      
+                  <ul
+                    class="dropdown-menu scrollable-menu"
+                    role="menu"
+                    aria-labelledby="menu1"
+                  >
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNPnNtoTPxyxUodaqR_YGAvJSClTBgr5rptbP_AFPCxb5EMAVOZnZKjjXzCZDemI1f0k&usqp=CAU"
+                          class="icon"
+                        />
+                        <span>Hardware</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png"
+                          class="icon"
+                        />
+                        <span>Pet care</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://i.pinimg.com/736x/ae/39/7c/ae397c142ffaf5f72093f7e0c90499e5.jpg"
+                          class="icon"
+                        />
+                        <span>Gadgets and electronics</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">
+                        <img
+                          src="https://img.freepik.com/premium-vector/occupational-health-flat-modern-design-illustration_566886-371.jpg?w=360"
+                          class="icon"
+                        />
+                        <span>Health and safety</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+ <!-- FOODS END -->
+<!-- BANNER -->
+<div class="conatiner">
+    <div class="banner">
+      <img src="./Images/itemsImage/SR_Promo.jpg" class="img-fluid" style="height: 400px;">
     </div>
-  </body>
-  <script
+  </div>
+  <!-- BANNER END -->
+        <div class="container-fluid px-5 mt-5">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-evenly flex-wrap">
+                        <div class="col-md-12 mt-5">
+                            <img src="./Images/SnR.jpg" class="rounded img-fluid marketLogoShadow" style="width: 300px; height: 300px;">
+                            <h5>S&R Membership Shopping - The World Class Shopping Experience</h5>
+                            <div class="mt-5">
+                            <label>Select Branch</label>
+                            <select class="form-select form-select-sm  px-5"> 
+                                <option>S&R - Aseana</option>
+                                <option>S&R - Nuvali</option>
+                                <option>S&R - San Fernando</option>
+                                <option>S&R - Marikina</option>
+                                <option>S&R - Dau</option>
+                                <option>S&R - Commonwealth</option>
+                                <option>S&R - Imus</option>
+                                <option>S&R - Lipa</option>
+                                <option>S&R - Congressional</option>
+                                <option>S&R - Sucat</option>
+                                <option>S&R - Shaw</option>
+                                <option>S&R - Bonifacio Global City</option>
+                                <option>S&R - Circuit Makati</option>
+                                <option>S&R - Paranaque</option>
+                                <option>S&R - Alabang</option>
+                                <option>S&R - Libis</option>
+                                <option>S&R - New Manila</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="container-fluid bg-primary subNav py-3 px-3 ms-2 sticky-top rounded">
+                        <div class="d-flex justify-content-around">
+
+                        <div class="col-md-3">
+                            <a href="#cont1" class="text-white"><i class="fa-solid fa-hotdog"></i>  Frozen Food</a>
+                        </div> 
+                        <div class="col-md-3">
+                            <a href="#cont2" class="text-white"><i class="fa-solid fa-wine-bottle"></i> Liquor</a>
+                        </div> 
+                        <div class="col-md-3">
+                            <a href="#cont3" class="text-white"><i class="fa-solid fa-bread-slice"></i> Bread & Bakery</a>
+                        </div> 
+                        <div class="col-md-3">
+                            <a href="#cont4" class="text-white"><i class="fa-solid fa-tv"></i>  Appliances</a>
+                        </div> 
+
+                        </div>
+                    </div>
+                    <!-- S&R food Container-->
+                    <div class="container-fluid" id="cont1">
+                        <h1 class="text-center mt-5">Frozen Food</h1>
+                        <div class="d-flex justify-content-between flex-wrap">
+                      
+                                <div class="card rounded mt-5" style="width: 500px;">
+                                    <div class="card-header"><h5 class="text-center">Bambi Cheese Sticks Jalapeno Party Pack 650g</h5></div>
+                                    <div class="card-body">
+                                        <img src="./Images/itemsImage/cheesesticks.jpg" class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul>Features:
+                                            <li> Multi-pack (48 sticks)</li>
+                                            <li>Frozen Jalapeno flavored cheese sticks in 1 packaging</li> 
+                                            <li>Made with Premium Jalapeno</li>
+                                             <li>Creamy and savory cheese inside</li> 
+                                               <li> Product of the Philippines</li>
+                                        </ul>
+                              
+                                        <h5>Actual Weight: 0.64 KGs</h5>
+                                    </div>
+                                </div>
+                     
+                      
+                            <div class="card rounded mt-5"  style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">Johnsonville Original Smoked Sausage 360g</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/sausage.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Single Item</li>
+                                        <li>Sausage in 1 pack</li>
+                                        <li>Made with 100% pork</li> 
+                                        <li>Original smoked flavor</li>
+                                        <li>Product of USA</li>
+                                    </ul>
+                                    <h5>Actual Weight: 0.38 KGs</h5>
+                                </div>
+                            </div>
+                        
+                            <div class="card rounded mt-5" style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">S&R French Fries Crinkle Cut 2kg</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/fries.jfif"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Single Item</li>
+                                        <li>Crinkle-cut French Fries in 1 plastic packaging</li>
+                                        <li>Easy-to-Prepare</li>
+                                        <li>Quick to cook</li>
+                                        <li>Product of the Netherlands</li>
+                                    </ul>
+                                    <h5>Actual Weight: 0.84 KGs</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                <!-- S&R Foodcontainer Ends -->
+
+
+                <!-- liquor-->
+                <div class="container-fluid" id="cont2">
+                    <h1 class="text-center mt-5">Liquor</h1>
+                    <div class="d-flex justify-content-between flex-wrap">
+                  
+                            <div class="card rounded mt-5" style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">Jack Daniel's Old No.7 Tennessee Whiskey 700mL</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/jackdaniels.jpg" class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li> Single Item</li>
+                                        <li>Tennessee Whiskey in 1 glass bottle</li> 
+                                        <li>40% Alcohol Volume</li>
+                                         <li>Sugar Maple Charcoal</li> 
+                                           <li>Product of the USA</li>
+                                    </ul>
+                          
+                                    <h5>Actual Weight: 1.14 KGs</h5>
+                                </div>
+                            </div>
+                 
+                  
+                        <div class="card rounded mt-5"  style="width: 500px;">
+                            <div class="card-header"><h5 class="text-center">Johnnie Walker Blue Label Blended Scotch Whisky 750 mL</h5></div>
+                            <div class="card-body">
+                                <img src="./Images/itemsImage/bluelabel.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                            </div>
+                            <div class="card-footer">
+                                <ul>Features:
+                                    <li>Single Item</li>
+                                    <li>Blended Scotch Whisky in 1 bottle</li>
+                                    <li>40% alc. / vol.k</li> 
+                                    <li>Rich and smoky</li>
+                                    <li>Product of Scotland</li>
+                                </ul>
+                                <h5>Actual Weight: 2.02 KGs</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="card rounded mt-5" style="width: 500px;">
+                            <div class="card-header"><h5 class="text-center">Jagermeister Herb Liqueur 700mL</h5></div>
+                            <div class="card-body">
+                                <img src="./Images/itemsImage/Jagermeister.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                            </div>
+                            <div class="card-footer">
+                                <ul>Features:
+                                    <li>Single Item</li>
+                                    <li>Herbal Liqueur in 1 glass bottle</li>
+                                    <li>35% alc. / vol.</li>
+                                    <li>Selected 56 botanicals, cold macerated elixir, matured in oak</li>
+                                    <li>Product of Germany</li>
+                                </ul>
+                                <h5>Actual Weight: 2.02 KGs</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                    <!-- #end of liquor container -->
+
+                   <!--bakery and bread--> 
+                    <div class="container-fluid" id="cont3">
+                        <h1 class="text-center mt-5">Bread & Bakery</h1>
+                        <div class="d-flex justify-content-between flex-wrap">
+                      
+                                <div class="card rounded mt-5" style="width: 500px;">
+                                    <div class="card-header"><h5 class="text-center">S&R US Oatmeal Raisin Cookies 8pcs</h5></div>
+                                    <div class="card-body">
+                                        <img src="./Images/itemsImage/SR_OatmealRaisinCookies.jpg" class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul>Features:
+                                            <li>Single Item</li>
+                                            <li>Oatmeal Raisin Cookies in 1 plastic packaging</li> 
+                                            <li>Best paired with hot drinks</li>
+                                             <li>Sweet, grainy, and tasty</li> 
+                                               <li>Great for snacking</li>
+                                        </ul>
+                              
+                                        <h5>Actual Weight: 0.62 KGs</h5>
+                                    </div>
+                                </div>
+                     
+                      
+                            <div class="card rounded mt-5"  style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">S&R Regular Four-cheese Muffins 4pcs</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/SR_Regular4cheeseMuffins.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Single Item</li>
+                                        <li>Regular muffins in 1 plastic packaging</li>
+                                        <li>Four cheese flavor</li> 
+                                        <li>Sweet, creamy, grainy, and tasty</li>
+                                        <li>Best paired with hot drinks</li>
+                                    </ul>
+                                    <h5>Actual Weight: 0.77 KGs</h5>
+                                </div>
+                            </div>
+                        
+                            <div class="card rounded mt-5" style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">Cafe Valley Blueberry Mini Muffins 24pcs</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/SR_CafValleyBlueberryMiniMuffins.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Multi-pack (24 pieces)</li>
+                                        <li>Mini Muffins in 1 plastic packaging</li>
+                                        <li>Blueberry flavor</li>
+                                        <li>Perfect for breakfast meals and snacks</li>
+                                        <li>Product of USA</li>
+                                    </ul>
+                                    <h5>Actual Weight: 0.68 KGs</h5>
+                                </div>
+                            </div>
+    
+                        </div>
+                        </div>
+                       <!-- #end bakery and bread --> 
+
+                       <div class="container-fluid" id="cont4">
+                        <h1 class="text-center mt-5">Appliances</h1>
+                        <div class="d-flex justify-content-between flex-wrap">
+                      
+                                <div class="card rounded mt-5" style="width: 500px;">
+                                    <div class="card-header"><h5 class="text-center">Blakk 32-inch Smart LED TV KSSTV-32HDA</h5></div>
+                                    <div class="card-body">
+                                        <img src="./Images/itemsImage/SR_TV.jpg" class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul>Features:
+                                            <li>Single Item</li>
+                                            <li>Smart LED TV in 1 box</li> 
+                                            <li>Runs android 9.0 operating system, High Brightness, <br>
+                                                High Contrast Ratio, Built-in wifi, Audio return chanel <br>
+                                                 with 16:9 Widescreen Comes with remote control</li>
+                                             <li>230V, 60Hz, 48W</li> 
+                                             <li>Rj45x1, AV input x 2, HDMI, HDMI CEC, VGA and USB portfor Multi-media supported </li>
+                                        </ul>
+                              
+                                        <h5>Actual Weight: 5.16 KGs</h5>
+                                    </div>
+                                </div>
+                     
+                      
+                            <div class="card rounded mt-5"  style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">Samsung Sound Bar HW-T420/XP</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/SR_SamsungSoundBar.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Single Item</li>
+                                        <li>Sound Bar System,1 set in 1 packaging</li>
+                                        <li>Dolby Audio, Optical Cable Included, Powerful Bass, <br>
+                                            One Remote Control, Smart Sound Mode, Game Mode,<br>
+                                            Bluetooth Tv Connection, 150W RMS</li> 
+                                        <li>110-240V, 50/60Hz, 30W</li>
+                                        <li>Product of Korea</li>
+                                    </ul>
+                                    <h5>Actual Weight: 7.51 KGs</h5>
+                                </div>
+                            </div>
+                        
+                            <div class="card rounded mt-5" style="width: 500px;">
+                                <div class="card-header"><h5 class="text-center">Samsung Split Type Air Conditioner 2.5hp AR24TYGCGWKNTC</h5></div>
+                                <div class="card-body">
+                                    <img src="./Images/itemsImage/SR_SamsungSplitTypeAirConditioner.jpg"  class="img-fluid rounded" style="width: 500px; height: 400px;">
+                                </div>
+                                <div class="card-footer">
+                                    <ul>Features:
+                                        <li>Single Item</li>
+                                        <li>Split-Type Air Conditioner in 1 box</li>
+                                        <li>Wall mount indoor unit</li>
+                                        <li>41 to 54 sq. m cools sized rooms</li>
+                                        <li>Product of Korea</li>
+                                    </ul>
+                                    <h5>Actual Weight: 12 KGs</h5>
+                                </div>
+                            </div>
+    
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"
