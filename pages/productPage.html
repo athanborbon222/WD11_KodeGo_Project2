@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9a1cac315a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+</head>
+<body>
+<!-- Offcanvas Side Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false" data-bs-scroll="true">
+        <div class="offcanvas-header d-flex flex-row w-100 py-0">
+            <h6 class="offcanvas-title " id="offcanvas">
+                <img src="../Images/LOGO3.png" alt="" style="width: 90%;">
+            </h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0 pt-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 pt-3 pb-3 px-3 align-items-start border-5 border-top border-bottom" id="menu">
+                <li class="nav-item w-100">
+                    <a href="#BestSeller" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Best Sellers</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#Promos" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Promos</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#GreatDeals" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Great Deals</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 pt-3 pb-3 px-3 align-items-start" id="menu2">
+                <li class="nav-item w-100">
+                    <a href="#AlchoholicBevs" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Alchoholic Beverages</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#NonAlchoholicBevs" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Non-Alchoholic Beverages</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#Appliances" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Appliances</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#Automotive" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Automotive</span>
+                    </a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#BabyCare" class="nav-link text-truncate">
+                        <span class="ms-1 fs-5 fw-semibold">Baby Care</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- Offcanvas Side Menu End-->
+<!-- NavBar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-info ">
+    <button class="btn float-end align-self-center h-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" aria-controls="offcanvasScrolling">
+        <i class="fa-solid fa-arrow-right fa-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasScrolling"></i>
+    </button>
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        
+        <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+            <img src="../Images/LOGO2.png" style="width:60%;" alt="">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!-- <nav class="navbar sticky-top navbar-expand-lg bg-info">
+    <div class="container container-fluid w-100 mx-0 px-5">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-auto">
+                <button class="btn float-end align-self-center h-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" aria-controls="offcanvasScrolling">
+                    <i class="fa fa-bars fa-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasScrolling"></i>
+                </button>
+            </div>
+            <div class="col-auto">
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+                    <img src="../Images/LOGO2.png" style="width:60%;" alt="">
+                </a>
+            </div>
+            <div class="col-auto">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Link
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-auto">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="col-auto">
+                <div class="col-md-1 col order-md-3 order-2 text-end pe-4">
+                    <a class="position-relative" href="../cart/index.html">
+                        <i class="bi bi-cart3 fs-2 text-dark"></i>
+                        <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top: -12px">
+                            10
+                        <span class="visually-hidden">cart</span>
+                      </span>
+                    </a>
+                </div>
+                <a href="../login/" class="link-light fw-bold nav-link">
+                    Login
+                  </a>
+            </div>
+        </div>
+    </div>
+</nav>    -->
+
+<!-- NavBar End -->
+
+<!-- Body -->
+<div data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!-- Best Seller -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-10" id="BestSeller">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Best Sellers</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/5/31/XPcqZfFeZuckD8fqWMBNKZ_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Pork Kasim
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    1 kg
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 p px-0 pt-5 pb-0 my-0x-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱150.00/kg
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/5/31/ZxWNwbyyGjj7gmRzsPFeVN_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Pork Baby Back Ribs
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    1 kg
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱129.00/kg
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/6/7/6sbYTjsPwz62vCXcDwXRBE_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Argentina Beef Tapa
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    400 g
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱120.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/6/7/dN8rkXBF3gUAeeravsiDta_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Gardenia Butter Toast
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    5 slices
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱23.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/5/10/Jju7mYGPQgCTtC6g4UHvgN_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Gilbey's Special Dry Gin
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    1 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱250.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promos -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-25" id="Promos">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Promotions</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/6/7/naTfqW8qvCF76vz3Wn8Kdf_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Green Grape Soju
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    360 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex justify-content-around fs-6 me-3 fw-bold display-6 px-0 mx-0">
+                                        <span style="
+                                        text-decoration: line-through;
+                                        text-decoration-thickness: 2px;
+                                        text-decoration-color: red;">
+                                        ₱142.00
+                                        </span>
+                                        ₱90.00
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/6/7/jF2ojWaGKosdCZmEZYY5Ms_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Cherry Soju
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    360 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex justify-content-around fs-6 me-3 fw-bold display-6 px-0 mx-0">
+                                        <span style="
+                                        text-decoration: line-through;
+                                        text-decoration-thickness: 2px;
+                                        text-decoration-color: red;">
+                                        ₱142.00
+                                        </span>
+                                        ₱90.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/9/10/nRbkaKieV6CJ2A5d3KwHK8_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    KitKat
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    17 g x 6 pcs
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex justify-content-around fs-6 me-3 fw-bold display-6 px-0 mx-0">
+                                        <span style="
+                                        text-decoration: line-through;
+                                        text-decoration-thickness: 2px;
+                                        text-decoration-color: red;">
+                                        ₱90.00
+                                        </span>
+                                        ₱71.75
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2020/10/4/bf59xfHZtDyqpfokFEWYNT_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    M&M's Milk Chocolate
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    40 g
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex justify-content-around fs-6 me-3 fw-bold display-6 px-0 mx-0">
+                                        <span style="
+                                        text-decoration: line-through;
+                                        text-decoration-thickness: 2px;
+                                        text-decoration-color: red;">
+                                        ₱40.00
+                                        </span>
+                                        ₱35.25
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/9/10/KjxSwuewgRXvM73kdkMmqx_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    KitKat
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    35 g
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex justify-content-around fs-6 me-3 fw-bold display-6 px-0 mx-0">
+                                        <span style="
+                                        text-decoration: line-through;
+                                        text-decoration-thickness: 2px;
+                                        text-decoration-color: red;">
+                                        ₱25.25
+                                        </span>
+                                        ₱30.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Buy 1 Take 1 -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-10" id="GreatDeals">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Great Deals</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2020/10/4/AywC6HNVLrRtmWPQ5TfKUe_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Lady's Choice Mayonnaise
+                                </h5>
+                                <br>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    <span class="text">
+                                        3.5 L
+                                    </span>
+                                    <br>
+                                    <span class="text text-danger">
+                                        BUY 1 TAKE 1
+                                    </span>
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱1,152.20
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/4/5/aPfRWPE8Rwdhe79WKoXmLe_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Knorr Liquid Seasoning
+                                </h5>
+                                <br>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    <span class="text">
+                                        1 L
+                                    </span>
+                                    <br>
+                                    <span class="text text-danger text-center">
+                                        BUY 1 TAKE 1
+                                    </span>
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱279.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/4/21/Xn6oZnEQTxSQU4HtAGxcEC_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Surf Fabric Conditioner
+                                </h5>
+                                <br>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    <span class="text">
+                                        1.5 L
+                                    </span>
+                                    <br>
+                                    <span class="text text-danger text-center">
+                                        BUY 1 TAKE 1
+                                    </span>
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱295.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/4/8/R9tSbeuv2XFswP66xLgfBD_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Surf Powdered Detergent
+                                </h5>
+                                <br>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    <span class="text">
+                                        1.5 L
+                                    </span>
+                                    <br>
+                                    <span class="text text-danger text-center">
+                                        BUY 1 TAKE 1
+                                    </span>
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱750.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="https://media.pickaroo.com/media/thumb/variant_photos/2021/4/5/bDi7972s29T27JPM6QB8Z7_watermark_400.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Knorr Chicken Broth Cubes
+                                </h5>
+                                <br>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    <span class="text">
+                                        120 g
+                                    </span>
+                                    <br>
+                                    <span class="text text-danger text-center">
+                                        BUY 1 TAKE 2
+                                    </span>
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱95.25
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-bs-spy="scroll" data-bs-target="#menu2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!-- Alchoholic Beverages -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-25" id="AlchoholicBevs">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Alchoholic Beverages</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/Chandon.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Chandon Argentina Brut
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    750 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column justify-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱900.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/ElHombreGold.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    El Hombre Gold Tequilla
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    700 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱400.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/HeinekenBeerGraughtKeg.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Heineken Beer Keg
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    5 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱1,500.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/HeinekenCan.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Heineken Beer In Can
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    500 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱100.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/HennessyCognac.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Hennessy Cognac
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    700 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱2,000.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/JackDaniels.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Jack Daniel's Whiskey
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    3 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱4,500.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/JimBeam.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Jim Beam Bourbon
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    1 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱700.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold rounded-pill px-0 mx-0 fs-5 w-100">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/JohnnieWalkerDoubleBlack.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Johnnie Walker Double Black
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    1 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱1,900.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/MakersMark.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Maker's Mark Bourbon
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    1 L
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱1,350.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/Tanduay375ml.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Tanduay Rhum Dark
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    375 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱75.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/Alchoholic Beverages/Tanduay750ml.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Tanduay Rhum Dark
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    750 ml
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱150.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="text display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Non-alchoholic Beverages -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-10" id="NonAlchoholicBevs">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Non-alchoholic Beverages</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Best Seller 1
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱542.00
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 2
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱479.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 3
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱591.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 4
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱939.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 5
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱829.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 6
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱199.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appliances -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-25" id="Appliances">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Appliances</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Best Seller 1
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱542.00
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 2
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱479.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 3
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱591.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 4
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱939.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 5
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱829.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 6
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱199.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Automotive -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-10" id="Automotive">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Automotive</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Best Seller 1
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱542.00
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 2
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱479.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 3
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱591.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 4
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱939.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 5
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱829.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 6
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱199.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Baby Care -->
+    <section class="pb-5 bg-secondary pt-3 bg-opacity-25" id="BabyCare">
+        <div class="">
+            <h1 class="text text-uppercase text-center fw-semibold display-2 mb-3 pt-5 px-3 mx-3">Baby Care</h1>
+            <div class="row g-1 g-lg-3 g-md-2 g-sm-1 mx-1 mx-lg-3 mx-md-5 px-lg-3 px-md-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text text card-title fs-4" style="height: 80px;">
+                                    Best Seller 1
+                                </h5>
+                                <p class="text text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱542.00
+                                    </h5>
+                                    <button class="text text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 2
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱479.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2 border-0">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 3
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱591.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 4
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱939.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-sm-none d-none "> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 5
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱829.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 6
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱199.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-none d-sm-none d-none"> 
+                    <a href="" style="text-decoration: none; color: black;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100">
+                            <img src="../Images/ProductSample.jpg" alt="" class="card-img-top rounded-4 pt-3">
+                            <div class="card-body w-100 mx-0 px-2">
+                                <h5 class="text card-title fs-4" style="height: 80px;">
+                                    Best Seller 7
+                                </h5>
+                                <p class="text card-text fs-5 text-secondary fw-semibold">
+                                    Product Description
+                                </p>
+                                <div class="card-footer border-0 d-flex flex-column align-content-end mx-0 px-0 pt-5 pb-0 my-0">
+                                    <h5 class="text d-flex align-self-center fs-5 me-3 fw-bold display-6">
+                                        ₱766.00
+                                    </h5>
+                                    <button class="text btn btn-primary fw-semibold fs-5 w-100  rounded-pill px-0 mx-0">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card border-3 border-end border-bottom border-top-0 border-start-0 h-100 border-info rounded-4 h-100 w-100 h-100 w-100">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="display-6 fw-semibold fs-2">
+                                    See more
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Body End -->
+
+ <!-- Footer -->
+
+    <footer class="pt-3 text-primary bg-info">
+      <div class="row g-0">
+        <div class="col-md-3 col-12 text-center text-white order-2 ps-3 border-end border-dark">
+          <h5 class="display-5 fw-bold">Discover</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-4 fw-semibold">Products</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-4 fw-semibold">Shops</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-4 fw-semibold">Directory</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center order-3 border-end border-dark">
+          <h5 class="text-primary text-white display-5 fw-bold">About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-5 fw-semibold">About us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-5 fw-semibold">Stories</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-dark fs-5 fw-semibold">FAQ</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark fs-5 fw-semibold">Contact Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark fs-5 fw-semibold">Join Us</a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center order-4 border-end border-dark">
+          <h5 class="text-primary text-white display-5 fw-bold">More</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark fs-4 fw-semibold">
+                    Terms & Conditions
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark fs-4 fw-semibold">
+                    Privacy Policy
+                </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-white d-flex justify-content-center order-1 order-md-last">
+          <img src="../Images/LOGO2.png" alt="">
+        </div>
+      </div>
+
+      <div class="d-flex flex-md-row flex-column justify-content-between py-4 mt-4 px-5 mx-0 border-1 border-top border-dark bg-primary w-100">
+        <h4 class="text-white text-center align-self-center fw-semibold">
+          © CH●AN●JO. ALL RIGHTS RESERVED
+        </h4>
+        <ul class="list-unstyled d-flex fs-2 gap-md-4 d-flex justify-content-center">
+        <li class="ms-3 text-center align-self-center text-white">
+            <h4 class="d-none d-sm-block">
+                FOLLOW US
+            </h4>
+        </li>
+        <li class="ms-3">
+            <a class="text-dark" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+        </li>
+        <li class="ms-3">
+            <a class="text-dark" href="#"><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="ms-3">
+            <a class="text-dark" href="#"
+              ><i class="bi bi-facebook"></i
+            ></a>
+        </li>
+        </ul>
+      </div>
+    </footer>
+
+  <!-- Footer -->
+
+<script src="../JS/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
