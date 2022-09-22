@@ -16,36 +16,32 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row g-3">
+      <div class="d-flex flex-row justify-content-evenly flex-wrap">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6  map-container">
           <div class="card mx-5 rounded" style="width: 600px; height: 850px">
             <div class="card-header py-2">
               <h2 class="text-center">Select Location</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body bg-info">
               <div class="map-wrapper rounded mb-5 img-fluid">
-                <iframe
-                  class="googlemap rounded"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.8927420706837!2d121.04319571431792!3d14.37561728640573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d0e870d715d3%3A0x5699ace4739096ba!2sHey%20Ho%20Garage%20Burgers!5e0!3m2!1sen!2sph!4v1659774515944!5m2!1sen!2sph"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe class="googlemap rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16011011.167718915!2d113.57584779446735!3d11.556282864430669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1663778175225!5m2!1sen!2sph"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <div class="card-footer py-5">
-              <button class="btn btn-outline-success setLocationBtn">
+            <div class="card-footer align-items-center">
+              <div class="form-floating py-2">
+                <input type="text" class="form-control LocationTxtbox" id="LocationText" placeholder="Location">
+                <label for="LocationText"><i class="fa-solid fa-map-location-dot"></i>Location</label>
+            </div>
+              <a class="btn btn-outline-info text-dark setLocationBtn" href="landingpages.html" >
                 Set Location
-              </button>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-md-3"></div>
       </div>
-    </div>
+    </div> 
   </body>
 </html>

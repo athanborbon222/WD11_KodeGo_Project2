@@ -31,4 +31,7 @@ margin-top: 200px;
 
 }
 
-
+.itemHeader{
+    font: xx-large "Poppins-SemiBold", sans-serif;
+    text-decoration: underline;
+}
