@@ -11,68 +11,90 @@
 
    
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/9a1cac315a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-info py-4 px-5 footerShadow">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="landingpages.html">
-            <img src="./Images/LOGO3.png" class="img-fluid rounded-circle" style="width: 100px;">
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-  
-              <li class="formSearch">
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="What do you want?"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-light" type="submit">Search</button>
-                </form>
-              </li>
-              <li class="nav-item"></li>
-            </ul>
-  
-            <form class="d-flex" role="submit">
-              <button type="button" class="btn btn-light me-2">My Account</button>
-            </form>
-            <a class="position-relative" href="../cart/index.html">
-              <i class="fa-solid fa-cart-shopping"></i>
-  
-              <span class="visually-hidden">cart</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-      <!-- NAVBAR END -->
+
+
+<!-- Offcanvas Cart -->
+<div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">
+          Cart Items
+      </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div>
+      <ul class="d-flex flex-column" id="cartItems">
+      </ul>
+      <h3 class="text-center w-100">TOTAL: ₱<span id="totalNum">0</span></h3>
+      <a class="btn btn-primary mx-3 w-100 rounded-pill" href="CartP.html">
+          Checkout
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Offcanvas Cart End-->
+
+<!-- NavBar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-info d-flex flex-row justify-content-center">
+  <div class="container-fluid d-flex align-items-center justify-content-around">
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+          <img src="../Images/LOGO2.png" style="width: 50%;" alt="">
+      </a>
+      <button class="btn btn-sm btn-primary position-relative my-3 float-end order-lg-last" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="bi bi-cart3 fs-4 text-dark"></i>
+          <span
+            class="position-absolute start-99 translate-middle badge rounded-pill bg-danger"
+            style="top: 12px"
+            id="itemNumber">
+            0
+          </span>
+      </button>
+    <div class="collapse navbar-collapse text-center w-100" id="mynavbar">
+      <ul class="navbar-nav me-auto px-0 mx-2">
+        <li class="nav-item mx-2">
+          <a class="nav-link fw-bold" href="./landingpages.html">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fw-bold" href="./pages/productPage.html">Products</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fw-bold" href="./contact us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-lg-grow-1 px-3 my-2">
+      <form class="d-flex px-3 my-2 w-100">
+          <input class="form-control me-2 text-dark" type="text" placeholder="What are you looking for?">
+          <button class="btn btn-sm btn-primary text-dark fw-semibold" type="button">Search</button>
+      </form>
+      </div>
+      <div class="d-flex justify-content-lg-end justify-content-center flex-grow-1 h-100 px-3 my-2">
+        <a href="./userprofile.html">
+          <button type="Button" class="btn btn-primary py-2 px-3 h-100 text-dark fw-semibold d-flex flex-lg-shrink-1 flex-lg-grow-0 flex-grow-1">Account</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- NavBar End -->
+
 
 
     <div class="container-fluid">
         <div class="d-flex justify-content-evenly flex-wrap">
             <div class="col-md-3">
-                <div class="card menu-card py-5 px-5 my-5">
+                <div class="card menu-card py-5 px-5 mt-5">
                 <ul>
                     <li class="card-item"><a href="#" class="btn card-link">Account Information</a></li>
                     <li class="card-item"><a href="#" class="btn card-link">Order List</a></li>
                     <li class="card-item"><a href="#" class="btn card-link">My Address</a></li>
-                    <li class="card-item"><a href="index.html" class="btn card-link">Logout</a></li>
+                    <li class="card-item"><a href="./landingpages.html" class="btn card-link">Logout</a></li>
                   </ul>
                 </div>  
             </div>
@@ -81,7 +103,7 @@
 
 
 
-            <div class="col-md-6 profileCard">
+            <div class="col-md-6 profileCard" id="cont1">
                
                 <h1>Edit Profile</h1>
                 <div class="row">
@@ -134,9 +156,7 @@
         </div>
     </div>
 
-
-
-    
+  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
