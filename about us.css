@@ -2,6 +2,13 @@
   height: 50px;
   margin-top: -50px;
 }
-.formSearch {
-  width: 450px;
+a {
+  text-decoration: none;
+  font: 18px/32px "Poppins-regular", sans-serif;
+  color: black;
+  margin: 0px 0px 10px;
+}
+.fa-cart-shopping {
+  color: black;
+  font-size: xx-large;
 }
